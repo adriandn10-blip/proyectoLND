@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo sobre Baloncesto</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/crud.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="animar">Todo sobre Baloncesto</h1>
+        <nav>
+            <ul>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#reglas">Reglas</a></li>
+                <li><a href="#jugadores">Jugadores Famosos</a></li>
+                <li><a href="#registro">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="historia">
+        <div class="content-img">
+            <img src="img/portada.nba.png" alt="Logo de la NBA" class="fade-in">
+        </div>
+        <p class="fade-in">El baloncesto fue inventado en 1891 por el Dr. James Naismith en Springfield, Massachusetts.
+            Desde entonces, se ha convertido en uno de los deportes más populares del mundo.</p>
+    </section>
+
+
+    <section id="reglas">
+        <h2 class="fade-in">Reglas Básicas</h2>
+        <p class="fade-in">El objetivo del juego es anotar puntos introduciendo el balón en la canasta del equipo
+            contrario. Cada partido se juega en cuatro cuartos, y hay varias reglas que rigen el juego.</p>
+    </section>
+
+
+    <section id="jugadores">
+        <h2 class="fade-in">Jugadores Famosos</h2>
+        <p class="fade-in">Algunos de los jugadores más famosos incluyen a Michael Jordan, LeBron James y Kobe Bryant,
+            quienes han dejado una huella imborrable en la historia del baloncesto.</p>
+
+        <div id="basket" class="gallery">
+            <div>
+                <figure>
+                    <img class="gallery-item" src="img/kobe.bryant.jfif" alt="Kobe Bryant">
+                    <figcaption>Kobe Bryant</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img class="gallery-item" src="img/lebron.james.jfif" alt="LeBron James">
+                    <figcaption>LeBron James</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img class="gallery-item" src="img/Michael-Jordan-2.webp" alt="Michael Jordan">
+                    <figcaption>Michael Jordan</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img class="gallery-item" src="img/anteto.webp" alt="Giannis Antetokounmpo">
+                    <figcaption>Giannis Antetokounmpo</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img class="gallery-item" src="img/curry.jfif" alt="Stephen Curry">
+                    <figcaption>Stephen Curry</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img class="gallery-item"
+                        src="https://i0.wp.com/elgurudelbasket.com/wp-content/uploads/2016/03/carmelowebbkb-e1511134261869.jpg?resize=620%2C445&ssl=1"
+                        alt="Carmelo Anthony">
+                    <figcaption>Carmelo Anthony</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img class="gallery-item"
+                        src="https://cdn.gigantes.com/wp-content/uploads/2018/04/GettyImages-951469284.jpg"
+                        alt="Sergio Llull">
+                    <figcaption>Sergio Llull</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img class="gallery-item" src="img/slaughter.jpg" alt="AJ Slaughter">
+                    <figcaption>AJ Slaughter</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img class="gallery-item" src="img/jaycee-carroll-1.jpg" alt="Jaycee Carroll">
+                    <figcaption>Jaycee Carroll</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="registro">
+        <div class="container mt-5">
+            <h2>Formulario de Registro</h2>
+            <form id="miFormulario" action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section id="torneos">
+        <h1>Registro de Torneos de Baloncesto</h1>
+        <form id="championship-register-form">
+            <label for="name">Nombre del torneo:</label>
+            <input type="text" name="name" id="name" required placeholder="Nombre del torneo">
+
+            <label for="location">Localidad del torneo:</label>
+            <input type="text" name="location" id="location" required placeholder="Ubicación del torneo">
+
+            <label for="teams">Número de equipos participantes:</label>
+            <input type="number" name="teams" id="teams" min="2" required placeholder="Número de equipos">
+
+            <button type="submit">Registrar Torneo</button>
+        </form>
+        <div id="result"></div>
+    </section>
+
+<section>
+    <h2>Jugadores de Baloncesto</h2>
+    <div id="players-list">
+    </div>
+    <form action="" id="players-register">
+        <label for="name">Nombre del Jugador:</label>
+        <input type="text" name="name" id="name" placeholder="Ingresa el nombre del jugador">
+        <label for="team">Equipo:</label>
+        <input type="text" name="team" id="team" placeholder="Ingresa el equipo">
+        <button type="submit">Añadir Jugador</button>
+    </form>
+    <script src="js/crud.js"></script>
+</section>
+
+    <footer>
+        <div>
+            <img src="img/marca.jfif" alt="marca" id="marca">
+        </div>
+        <script>
+            document.getElementById("marca").onclick = function () {
+                event.preventDefault();
+                window.location.href = 'https://www.marca.com';
+            };
+        </script>
+    </footer>
+
+
+    <script src="js/formul.js"></script>
+    <script src="js/championship.js"></script>
+</body>
+
+</html>
